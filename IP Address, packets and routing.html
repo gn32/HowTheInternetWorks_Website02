@@ -58,7 +58,7 @@
     <div class="container-fluid">
         <div class="row justify-content-around">
             <div class style="background-color: palegreen">
-                <h4 class=" text-center mb-4 ">IP Addresses, packets and routing</h4>
+                <h1 class=" text-center mb-4 ">IP Addresses, packets and routing</h1>
             </div>
         </div>
         <div class="px-4 mb-4 ml-5 mr-5">
@@ -70,14 +70,14 @@
                  packet.
           </p>
           <p>
-              <strong>What are IP packets used for?</strong>
+              <h3>What are IP packets used for?</h3>
               </p>
              <p>
             Most networks use TCP/IP as the network protocol, or set of rules for communication between devices, and the
                  rules of TCP/IP require information to be split into packets that contain both a segment of data to be
                  transferred and the address where the data is to be sent.
           </p>
-             <strong>IP Address Classification</strong>
+             <h3>IP Address Classification</h3>
 IP addresses are 32 bit integers which are represented in the familiar dot based notation. The dot based notation is nothing but a decimal representation for each byte of the IP address. For example, an IP address with a hex value of 0x800A080B is represented as 128.10.8.11.
 The internet, as the name suggests, is a network of networks. Thus to uniquely identify a host on the internet, one needs to know the network's id and the host's id in the network. Thus IP address consist of two components, the network id and the host id. The network id is the number assigned to a network in the internet. Host id represents the id assigned to a host in the network.
 The figure below shows different classes of IP addresses. These addresses differ in the number of bits assigned to the network and host ids. Different classes of addresses serve different needs. For example, a class A IP address is suitable when the internet consists of a small number of networks but each network consists of a large number of hosts. On the other extreme, class C addressing is suitable for internets with a very large number of networks, with a small number of hosts per network.
@@ -85,12 +85,12 @@ The figure below shows different classes of IP addresses. These addresses differ
 
 
              </p>
-             <p><Strong>Subnets</Strong></p>
+             <p><h3>Subnets</h3></p>
 <p>The figure below describes a small internet consisting of three networks 128.8, 128.9.1 and 128.9.2. Strictly speaking, the internet consists of 128.8 network and 128.9.1 and 128.9.2 sub-networks (subnets). As we have seen in the previous section, 128.8 and 128.9 should have been classified as the network portion of a class B IP address. In this network 128.9 has been divided into two sub-networks (128.9.1 and 128.9.2) by using one of the bytes of the two byte host id as sub-network id.
 </p>
 <p>    Another way to look at this is that the first three bytes of IP addresses in 128.9.1 and 128.9.2 subnets are used for routing the packet. The other bits in the IP address are don't care from routing point of view. The specification of bits that should be used for routing is specified by associating a subnet mask with a routing entry. In this example, the subnet mask is 255.255.255.0 (0xFFFFFF00).
              </p>
-             <p><strong>IP Routing</strong></p>
+             <p><h3>IP Routing</h3></p>
              <p>
 Networks in the internet are connected to each other via routers. Routers carry traffic from one network/subnet to another. Routers maintain a routing table to decide how to route the IP packets. Each routing entry consists of the destination address, subnet mask and "route to" field. When a message needs to be routed to an IP address, the following steps are followed:
 </P>
@@ -121,10 +121,10 @@ Networks in the internet are connected to each other via routers. Routers carry 
             <p>Another important aspect of internets is a node in the internet can have multiple IP addresses. There will be one IP address per interface. For example, the Router in the figure above has three IP addresses, viz. 128.8.1.1, 128.9.1.1 and 128.9.2.1.
             </p>
 
-             <strong>Routing of a Packet from Host A to Host C</strong>
+             <h3>Routing of a Packet from Host A to Host C</h3>
 <p>Here we will trace the path taken by an IP packet sent from Host A to Host C. Routing related fields in the Ethernet MAC header and IP header are shown.
 </p>
-     <strong>Host A originates an IP packet towards Host C</strong>
+     <h3>Host A originates an IP packet towards Host C</h3>
              <p>
 
              </p>
@@ -145,7 +145,7 @@ Networks in the internet are connected to each other via routers. Routers carry 
              <p>
 
              </p>
-             <strong>Routers send the IP packet to Host C</strong>
+             <h3>Routers send the IP packet to Host C</h3>
              <p>
 
              </p>
@@ -161,7 +161,7 @@ Networks in the internet are connected to each other via routers. Routers carry 
              <p>
 
              </p>
-                          <strong>Host C receives the IP packet</strong>
+                          <h3>Host C receives the IP packet</h3>
              <p>
 
              </p>
