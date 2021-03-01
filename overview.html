@@ -53,27 +53,62 @@
    </header>
 
 <header class="bg-light">
-    <div class="container-md mb-5">
-        <div class="jumbotron-fluid">
-            <div class="col-md text-center">
-                    <img src="Images/Internet%20Archtecture.jpg" class="col-md-7" alt="Responsive image">
-
-                    <h1 class="display-4">How does the Internet works</h1>
-                    <p class="lead ">When you chat to somebody on the Net or send them an e-mail,
-                        do you ever stop to think how many different computers you are using in the process?
-                        There's the computer on your own desk, of course, and another one at the other end
-                        where the other person is sitting, ready to communicate with you.
-                        But in between your two machines, making communication between them possible,
-                        there are probably about a dozen other computers bridging the gap. Collectively,
-                        all the world's linked-up computers are called the Internet.
-                        How do they talk to one another?
-                        Let's take a closer look! </p>
-                </p>
-                    </DIV>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-sm-4 mb-4" style="background-color: palegreen">
+                <h4 class=" text-center">Internet Architecture</h4>
             </div>
-        </DIV>
+        </div>
+        <div class=" px-4 mb-4">
+
+
+            <h5> Important Terminology- </h5>
+
+            <p>
+            <li><strong>Client</strong> – uses web browser to request pages from an internet server</li>
+            </p>
+            <p>
+            <li><strong>LAN </strong>– Local Area Network connects computers close to one another</li>
+            </p>
+            <p>
+            <li><strong>WAN</strong> – Wide Area Network connects two or more LANS together</li>
+            </p>
+            <p>
+            <li><strong>IXP</strong> – Internet Exchange Point to connect WANs together</li>
+            </p>
+            <p>
+            <li><strong>WAN</strong> – Wide Area Network connects two or more LANS together</li>
+            </p>
+
+            <p>
+            <li><strong>ISP</strong> – Internet Service Provider owns WANs and leases access to users
+            </p>
+        </div>
+
+
+         <div class=" px-4 mb-4">
+
+            <h5> How an Internet Message is sent- </h5>
+
+             <p>
+                 <li> Data being sent is divided into packets (Max size = 64K, 65535 bytes ) </li>
+<li>Packet has a header with some technical information and a FROM address, TO address and the actual data.
+    Each header is 60 bytes </li>
+<li>Packets divided in to multiple parts contain the order of the packet</li>
+<li>Packets move on the Internet along different paths each taking different times</li>
+<li>Packets are reordered</li>
+<li>Received packets are acknowledged back to the sender</li>
+<li>Sender resends packets that do not acknowledge</li>
+             </p>
+
+         </div>
+
+
+
     </div>
 </header>
+
+
 
 
 
