@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>How does the Internet work</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<header class="bg-light">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-5 px-4 mx-4">
+            <a class="navbar-brand" href="home.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active  ">
+                        <a class="nav-link active" href="overview.html">Overview</a>
+                    </li>
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="about.html">About</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link " href="index.html">Index <span class="sr-only">(current)</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">
+                            Topics
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Domain%20names%20&%20ICANN.html">Domain names & ICANN</a>
+                            <a class="dropdown-item" href="IP%20Address,%20packets%20and%20routing.html">IP Addresses, Packets and Routing</a>
+                            <a class="dropdown-item" href="DNS.html">DNS</a>
+
+                            <a class="dropdown-item" href="HTTP.html">HTTPS</a>
+                            <a class="dropdown-item" href="W3C.html">W3C,HTML & CSS</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+   </header>
+
+<header class="bg-light">
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-sm-4 mb-4" style="background-color: palegreen">
+                <h4 class=" text-center">Internet Architecture</h4>
+            </div>
+        </div>
+        <div class=" px-4 mb-4 ml-5 mr-5" >
+
+
+            <h5> Important Terminology- </h5>
+
+            <p>
+            <li><strong>Client</strong> – uses web browser to request pages from an internet server</li>
+            </p>
+            <p>
+            <li><strong>LAN </strong>– Local Area Network connects computers close to one another</li>
+            </p>
+            <p>
+            <li><strong>WAN</strong> – Wide Area Network connects two or more LANS together</li>
+            </p>
+            <p>
+            <li><strong>IXP</strong> – Internet Exchange Point to connect WANs together</li>
+            </p>
+            <p>
+            <li><strong>WAN</strong> – Wide Area Network connects two or more LANS together</li>
+            </p>
+
+            <p>
+            <li><strong>ISP</strong> – Internet Service Provider owns WANs and leases access to users
+            </p>
+        </div>
+
+
+         <div class=" px-4 mb-4 ml-5 mr-5">
+
+            <h5> How an Internet Message is sent- </h5>
+
+             <p>
+                 <li> Data being sent is divided into packets (Max size = 64K, 65535 bytes ) </li>
+<li>Packet has a header with some technical information and a FROM address, TO address and the actual data.
+    Each header is 60 bytes </li>
+<li>Packets divided in to multiple parts contain the order of the packet</li>
+<li>Packets move on the Internet along different paths each taking different times</li>
+<li>Packets are reordered</li>
+<li>Received packets are acknowledged back to the sender</li>
+<li>Sender resends packets that do not acknowledge</li>
+             </p>
+
+         </div>
+
+
+
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
