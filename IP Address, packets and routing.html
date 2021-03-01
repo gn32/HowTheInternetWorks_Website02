@@ -14,8 +14,8 @@
 
 <header class="bg-light">
     <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-success mb-5 px-4 mx-4">
-            <a class="navbar-brand" href="how%20does%20the%20internet%20work.html">Home</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success mb-5 px-4 mx-4">
+            <a class="navbar-brand" href="home.html">Home</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,14 +23,16 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item  ">
-                        <a class="nav-link " href="how%20does%20the%20internet%20work.html">Overview</a>
+                        <a class="nav-link " href="overview.html">Overview</a>
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="index.html">Index <span class="sr-only">(current)</span></a>
+                    <li class="nav-item  ">
+                        <a class="nav-link  " href="about.html">About</a>
                     </li>
-                    <li class="nav-item active ">
-                        <a class="nav-link active " href="about.html">About</a>
+
+                    <li class="nav-item active">
+                        <a class="nav-link active" href="index.html">Index <span class="sr-only">(current)</span></a>
                     </li>
+
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
@@ -43,7 +45,7 @@
                             <a class="dropdown-item" href="DNS.html">DNS</a>
 
                             <a class="dropdown-item" href="HTTP.html">HTTPS</a>
-                            <a class="dropdown-item" href="#">W3C,HTML & CSS</a>
+                            <a class="dropdown-item" href="W3C.html">W3C,HTML & CSS</a>
                         </div>
                     </li>
                 </ul>
@@ -51,15 +53,16 @@
         </nav>
     </div>
    </header>
-<header class="bg-light">
-     <div class="container px-4" >
-         <p class="row gx-4">
 
-        <h1 class="display-3">IP Addresses, packets and routing</h1>
-             <p>
+  <header class="bg-light">
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class style="background-color: palegreen">
+                <h4 class=" text-center mb-4 ">IP Addresses, packets and routing</h4>
+            </div>
+        </div>
+        <div class="px-4 mb-4 ml-5 mr-5">
 
-
-             </p>
              <p><strong>What is in an IP packet?</strong>
             Each IP packet contains both a header (20 or 24 bytes long) and data (variable length). The header includes
                  the IP addresses of the source and destination, plus other fields that help to route the packet. The
@@ -109,11 +112,12 @@ Networks in the internet are connected to each other via routers. Routers carry 
              </p>
              <p><strong>Note:</strong> IP routing also supports a default entry. If the packet does not match any other entry, it is routed according to the default entry.
              </p>
+
+       <div class="col-md text-center mt-4 mb-4 ">
+
+
              <img src="Images/IP_1.gif"  width="575" height="500">
-             <p>
-
-
-             </p>
+       </div>
             <p>Another important aspect of internets is a node in the internet can have multiple IP addresses. There will be one IP address per interface. For example, the Router in the figure above has three IP addresses, viz. 128.8.1.1, 128.9.1.1 and 128.9.2.1.
             </p>
 
@@ -135,7 +139,9 @@ Networks in the internet are connected to each other via routers. Routers carry 
 </p>
 <p>7.Ethernet frame is sent to the MAC address found by ARP.</p>
              <p> The packet sent on the 128.8 LAN is:</p>
+            <div class="col-md text-center mt-4 mb-4 ">
              <img src="Images/IP_2.png"  width="1000" height="75">
+            </div>
              <p>
 
              </p>
@@ -149,7 +155,9 @@ Networks in the internet are connected to each other via routers. Routers carry 
 <p>4.Host C's MAC address is found from the ARP cache.</P>
 <p>5.Ethernet frame is addressed to Host C MAC Address.</p>
              <p>The packet sent over the 128.9.2 LAN is:</p>
+                <div class="col-md text-center mt-4 mb-4 ">
              <img src="Images/IP_3.png"  width="1000" height="75">
+                </div>
              <p>
 
              </p>
@@ -160,11 +168,6 @@ Networks in the internet are connected to each other via routers. Routers carry 
 <p></p><p>1.Host C receives the Ethernet frame and passes it to the IP layer.</p>
   <p> 2.IP routing table is searched and a match is detected with 128.9.2.2 entry.</p>
  <p>3.The "route to" field contains SELF, so the message is passed to the higher layer for delivery to the application</p>
-         </p><p>
-
-
-</p>
+        </div>
+</div>
              </header>
-</div>
-</div>
-</div>
